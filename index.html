@@ -15,12 +15,6 @@
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
     </script>
-    <!--
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 </head>
 <body>
@@ -48,7 +42,7 @@
             <p>I'm a FullStack Developer</p>
             <p>
                 <button type="button" class="btn btn-secondary">
-                    <a href="https://drive.google.com/file/d/1rXmLqeKUmtd1IK5ZI8js1c-BG6oU8HWx/view?usp=sharing" target="_blank">
+                    <a href="https://drive.google.com/file/d/1Aoxm2u6P4gxc64QsI9uV_twpwv80SzRW/view?usp=sharing" target="_blank">
                         View My Resume
                     </a>
                 </button>
@@ -84,7 +78,12 @@
                                 <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master Of Computer Applications</span></li>
                                 <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Palakkad</span></li>
                                 <li><i class="bi bi-chevron-right"></i> <strong>Nationality:</strong> <span>Indian</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Hobbies:</strong> <span>Wood Works</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Hobbies:</strong> 
+									  <a href="#" data-toggle="popover" title="WOOD WORKS" data-html="true" 
+									  data-content="<div class='row'><div class='column p-1'><img src='assets/img/relax1.jpg' width='100' height='75' class='border border-warning rounded'></div>
+									  <div class='column p-1'><img src='assets/img/coop.jpg' width='100' height='75' class='border border-warning rounded' /></div></div>
+									  <div class='row'><div class='column p-1'><img src='assets/img/relax2.jpg' width='100' height='75' class='border border-warning rounded'/></div></div>">View My Hobbies</a>
+								</li>
                             </ul>
                         </div>
                     </div>
@@ -279,6 +278,16 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     }
+</script>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover({
+        placement : 'bottom',
+		trigger : 'hover',
+        html : true,
+        content : '<div class="media"><img src="./assets/img/bpost-logo" class="mr-3" alt="Sample Image"><div class="media-body"><h5 class="media-heading">Jhon Carter</h5><p>Excellent Bootstrap popover! I really love it.</p></div></div>'
+    });
+});
 </script>
 <!-- ======= Footer ======= -->
 <footer id="footer">

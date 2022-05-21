@@ -337,3 +337,10 @@ section {
     #myBtn:hover {
         background-color: #555;
     }
+	
+	.popover  {
+background: black!important;
+}
+.popover.bottom .arrow:after {
+  border-bottom-color:black;
+}
